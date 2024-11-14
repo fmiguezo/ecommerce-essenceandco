@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos - Essence & Co.</title>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <img class="header-logo" src="../img/logo.png" alt="Logo de Essence & Co." />
+      <h1>Essence & Co. Shop</h1>
+    </header>
+    <nav>
+      <img class="navbar-toggler-img" src="../img/logo.png" alt="Logo de Essence & Co." />
+      <button class="navbar-toggler" id="navbar-toggler">&#9776;</button>
+      <ul id="navbar-menu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="ofertas.html">Ofertas</a></li>
+        <li><a href="resenias.html">Reseñas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="products-intro">
+        <h2>Descubrí Nuestros Productos</h2>
+        <p>Explorá nuestra amplia selección de perfumes premium y fragancias exclusivas.</p>
+      </section>
+      <section class="products-flex">
+        <div class="product-card">
+          <h2>Perfume Exótico</h2>
+          <img src="../img/products/perfume1.jpg" alt="Perfume Exótico" />
+          <button class="btn-ver-mas" data-product="perfume1">Ver más</button>
+        </div>
+        <div class="product-card">
+          <h2>Perfume Floral</h2>
+          <img src="../img/products/perfume2.jpg" alt="Perfume Floral" />
+          <button class="btn-ver-mas" data-product="perfume2">Ver más</button>
+        </div>
+        <div class="product-card">
+          <h2>Perfume Intenso</h2>
+          <img src="../img/products/perfume3.jpg" alt="Perfume Intenso" />
+          <button class="btn-ver-mas" data-product="perfume3">Ver más</button>
+        </div>
+        <div class="product-card">
+          <h2>Perfume Dulce</h2>
+          <img src="../img/products/perfume4.jpg" alt="Perfume Dulce" />
+          <button class="btn-ver-mas" data-product="perfume4">Ver más</button>
+        </div>
+        <div class="product-card">
+          <h2>Perfume Cítrico</h2>
+          <img src="../img/products/perfume5.jpg" alt="Perfume Cítrico" />
+          <button class="btn-ver-mas" data-product="perfume5">Ver más</button>
+        </div>
+        <div class="product-card">
+          <h2>Perfume Amaderado</h2>
+          <img src="../img/products/perfume6.png" alt="Perfume Amaderado" />
+          <button class="btn-ver-mas" data-product="perfume6">Ver más</button>
+        </div>
+        <div class="product-card">
+          <h2>Perfume Oriental</h2>
+          <img src="../img/products/perfume7.jpg" alt="Perfume Oriental" />
+          <button class="btn-ver-mas" data-product="perfume7">Ver más</button>
+        </div>
+        <div class="product-card">
+          <h2>Perfume Tropical</h2>
+          <img src="../img/products/perfume8.jpg" alt="Perfume Tropical" />
+          <button class="btn-ver-mas" data-product="perfume8">Ver más</button>
+        </div>
+        <div class="product-card">
+          <h2>Perfume Fresco</h2>
+          <img src="../img/products/perfume9.jpg" alt="Perfume Fresco" />
+          <button class="btn-ver-mas" data-product="perfume9">Ver más</button>
+        </div>
+        <div id="product-modal" class="modal">
+          <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="" />
+            <p id="modal-description"></p>
+            <p id="modal-price"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Essence & Co. Todos los derechos reservados.</p>
+    </footer>
+    <script src="../js/scripts.js"></script>
+  </body>
+</html>
