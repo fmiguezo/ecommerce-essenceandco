@@ -25,22 +25,44 @@ async function cargarOfertas() {
       });
 
       offerCard.innerHTML = `
-          <h3>${oferta.nombre}</h3>
-          <p><strong>Precio: $${oferta.precioOferta.toFixed(2)}</strong> (Antes $${oferta.precioOriginal.toFixed(
-        2
-      )})</p>
-          <button class="btn-comprar" data-product="${oferta.id}">¡Aprovechar Oferta!</button>
-        `;
+            <h3>${oferta.nombre}</h3>
+            <p><strong>Precio: $${oferta.precio.toFixed(2)}</strong> (Antes $${oferta.precioOriginal.toFixed(2)})</p>
+            <button class="btn-comprar" data-product="${oferta.id}">¡Aprovechar Oferta!</button>
+          `;
+
       offerCard.insertBefore(imagesContainer, offerCard.querySelector("p"));
       container.appendChild(offerCard);
-    });
 
-    // agregarEventosComprar();
+      const btnComprar = offerCard.querySelector(".btn-comprar");
+      btnComprar.addEventListener("click", () => {
+        agregarAlCarrito(oferta.id);
+      });
+    });
   } catch (error) {
-    console.error("Error cargando los productos:", error);
+    console.error("Error cargando las ofertas:", error);
   }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   cargarOfertas();
 });
+
+/* FUNCION PARA AGREGAR AL CARRITO */
+function agregarAlCarrito(productId) {
+  const oferta = ofertas.find((oferta) => oferta.id === productId);
+
+  if (oferta) {
+    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    const ofertaExistente = carrito.find((p) => p.id === oferta.id);
+
+    if (ofertaExistente) {
+      ofertaExistente.cantidad += 1;
+    } else {
+      oferta.cantidad = 1;
+      carrito.push(oferta);
+    }
+
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+    alert("Producto añadido al carrito!");
+  }
+}

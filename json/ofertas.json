@@ -15,7 +15,8 @@
       }
     ],
     "precioOriginal": 95.0,
-    "precioOferta": 85.0
+    "precio": 85.0,
+    "tipo": "oferta"
   },
   {
     "id": "oferta2",
@@ -33,7 +34,8 @@
       }
     ],
     "precioOriginal": 100.0,
-    "precioOferta": 88.0
+    "precio": 88.0,
+    "tipo": "oferta"
   },
   {
     "id": "oferta3",
@@ -51,6 +53,7 @@
       }
     ],
     "precioOriginal": 120.0,
-    "precioOferta": 105.0
+    "precio": 105.0,
+    "tipo": "oferta"
   }
 ]
