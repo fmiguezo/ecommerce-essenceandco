@@ -1,0 +1,65 @@
+[
+  {
+    "id": "perfume1",
+    "nombre": "Perfume Exótico",
+    "imagen": "../img/products/perfume1.jpg",
+    "descripcion": "Un perfume con notas exóticas que transportan a un paraíso tropical.",
+    "precio": "$45.00"
+  },
+  {
+    "id": "perfume2",
+    "nombre": "Perfume Floral",
+    "imagen": "../img/products/perfume2.jpg",
+    "descripcion": "Fragancia floral fresca que evoca un campo lleno de flores.",
+    "precio": "$50.00"
+  },
+  {
+    "id": "perfume3",
+    "nombre": "Perfume Intenso",
+    "imagen": "../img/products/perfume3.jpg",
+    "descripcion": "Un perfume con una fragancia poderosa y duradera.",
+    "precio": "$60.00"
+  },
+  {
+    "id": "perfume4",
+    "nombre": "Perfume Dulce",
+    "imagen": "../img/products/perfume4.jpg",
+    "descripcion": "Notas dulces y suaves que brindan una sensación acogedora.",
+    "precio": "$40.00"
+  },
+  {
+    "id": "perfume5",
+    "nombre": "Perfume Cítrico",
+    "imagen": "../img/products/perfume5.jpg",
+    "descripcion": "Fresca fragancia cítrica, perfecta para los días soleados.",
+    "precio": "$35.00"
+  },
+  {
+    "id": "perfume6",
+    "nombre": "Perfume Amaderado",
+    "imagen": "../img/products/perfume6.png",
+    "descripcion": "Notas amaderadas que aportan un toque elegante y sofisticado.",
+    "precio": "$55.00"
+  },
+  {
+    "id": "perfume7",
+    "nombre": "Perfume Oriental",
+    "imagen": "../img/products/perfume7.jpg",
+    "descripcion": "Fragancia cálida y misteriosa con toques orientales.",
+    "precio": "$65.00"
+  },
+  {
+    "id": "perfume8",
+    "nombre": "Perfume Tropical",
+    "imagen": "../img/products/perfume8.jpg",
+    "descripcion": "Una mezcla exótica de frutas tropicales y flores frescas.",
+    "precio": "$48.00"
+  },
+  {
+    "id": "perfume9",
+    "nombre": "Perfume Fresco",
+    "imagen": "../img/products/perfume9.jpg",
+    "descripcion": "Fragancia fresca y ligera que aporta energía durante todo el día.",
+    "precio": "$42.00"
+  }
+]

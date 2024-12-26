@@ -308,7 +308,8 @@ button[type="submit"]:active {
   margin-top: 1rem;
 }
 
-.product-card button {
+.product-card button,
+.modal button {
   background-color: #efd2be;
   color: #917f6e;
   padding: 0.5rem 1rem;
@@ -322,7 +323,8 @@ button[type="submit"]:active {
   text-align: center;
 }
 
-.product-card button:hover {
+.product-card button:hover,
+.modal button:hover {
   background-color: #d9ddcd;
 }
 
@@ -673,4 +675,10 @@ button[type="submit"]:active {
   .google-maps iframe {
     height: 400px;
   }
+}
+
+#carrito-img {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
 }
