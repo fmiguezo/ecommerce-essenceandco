@@ -1,0 +1,56 @@
+[
+  {
+    "id": "oferta1",
+    "nombre": "Oferta 1: Perfume Exótico + Perfume Floral",
+    "productos": [
+      {
+        "id": "perfume1",
+        "nombre": "Perfume Exótico",
+        "imagen": "../img/products/perfume1.jpg"
+      },
+      {
+        "id": "perfume2",
+        "nombre": "Perfume Floral",
+        "imagen": "../img/products/perfume2.jpg"
+      }
+    ],
+    "precioOriginal": 95.0,
+    "precioOferta": 85.0
+  },
+  {
+    "id": "oferta2",
+    "nombre": "Oferta 2: Perfume Intenso + Perfume Dulce",
+    "productos": [
+      {
+        "id": "perfume3",
+        "nombre": "Perfume Intenso",
+        "imagen": "../img/products/perfume3.jpg"
+      },
+      {
+        "id": "perfume4",
+        "nombre": "Perfume Dulce",
+        "imagen": "../img/products/perfume4.jpg"
+      }
+    ],
+    "precioOriginal": 100.0,
+    "precioOferta": 88.0
+  },
+  {
+    "id": "oferta3",
+    "nombre": "Oferta 3: Perfume Amaderado + Perfume Oriental",
+    "productos": [
+      {
+        "id": "perfume6",
+        "nombre": "Perfume Amaderado",
+        "imagen": "../img/products/perfume6.png"
+      },
+      {
+        "id": "perfume7",
+        "nombre": "Perfume Oriental",
+        "imagen": "../img/products/perfume7.jpg"
+      }
+    ],
+    "precioOriginal": 120.0,
+    "precioOferta": 105.0
+  }
+]
