@@ -50,7 +50,7 @@ function agregarAlCarrito(productId) {
     }
 
     localStorage.setItem("carrito", JSON.stringify(carrito));
-    alert("Producto añadido al carrito!");
+    mostrarModal();
   }
 }
 
@@ -109,5 +109,33 @@ function agregarEventosComprar() {
       const productId = event.target.getAttribute("data-product");
       agregarAlCarrito(productId);
     });
+  });
+}
+
+/* FUNCION MOSTRAR MODAL PRODUCTO AGREGADO AL CARRITO */
+function mostrarModal() {
+  const modal = document.getElementById("modal-agregado");
+  const closeBtn = document.getElementById("modal-close");
+  const modalContinueBtn = document.getElementById("modal-continue");
+  const modalViewCartBtn = document.getElementById("modal-view-cart");
+
+  modal.style.display = "flex";
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  modalContinueBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  modalViewCartBtn.addEventListener("click", () => {
+    window.location.href = "carrito.html";
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
   });
 }
